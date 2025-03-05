@@ -1,0 +1,112 @@
+ /* 全体のデザイン */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #111;
+    color: #ddd;
+    line-height: 1.8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ヘッダー */
+header {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    border-bottom: 2px solid #444;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ff4444;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.6);
+}
+
+/* ナビゲーション（目次） */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffaaaa;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4444;
+}
+
+/* セクション */
+section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #222;
+    border-left: 5px solid #ff4444;
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffaaaa;
+    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+}
+
+/* 箇条書き */
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* CTA（コメント促進） */
+h3 {
+    font-size: 22px;
+    color: #ff4444;
+}
+
+p a {
+    color: #ffaaaa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* スクロール時の効果 */
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+h1, h2 {
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
